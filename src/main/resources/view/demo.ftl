@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>plumber-tutorial</title>
+        <title>${title}</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link rel="stylesheet" type="text/css" href="/static/css/demo.css">
     </head>
@@ -12,12 +12,12 @@
     </div>
 
     <div id="content">
-        <div id="main">
+        <div id="main" pb-pipe="mainPipe">
             main
         </div>
 
-        <div id="right">
-            right
+        <div id="right" pb-barrier="rightBarrier">
+            right ${rightBarrier}
         </div>
 
         <div class="clear-both"></div>

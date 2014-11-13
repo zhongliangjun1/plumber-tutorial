@@ -9,9 +9,17 @@
 	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd">
 
 
-    <!--<bean id="brandService" class="com.enjoylife.brand.service.Impl.BrandServiceImpl">-->
-        <!--<property name="brandDao" ref="brandDao"/>-->
-    <!--</bean>-->
+    <bean id="plumber" class="com.dianping.plumber.core.Plumber">
+    </bean>
+
+    <bean id="demo" class="com.dianping.plumber.DemoController">
+    </bean>
+
+    <bean id="mainPipe" class="com.dianping.plumber.MainPipe">
+    </bean>
+
+    <bean id="rightBarrier" class="com.dianping.plumber.RightBarrier">
+    </bean>
 
 
 

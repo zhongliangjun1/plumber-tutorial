@@ -3,8 +3,8 @@ view:
     resourcesPath: /view
     suffix: .ftl
     encoding: UTF-8
-    viewSourceLoaderFactory: com.dianping.plumber.view.ViewSourceLoaderFactory
-    viewRendererFactory: com.dianping.plumber.view.supportemarkerRendererFactory
+    viewSourceLoaderFactory: com.dianping.plumber.view.support.ViewSourceUnderClassPathLoaderFactory
+    viewRendererFactory: com.dianping.plumber.view.support.FreemarkerRendererFactory
 
 business:
     controllersPackageScan:

@@ -8,6 +8,9 @@
     <constant name="struts.multipart.maxSize" value="20971520"/>
     <constant name="struts.devMode" value="true" />
 
+    <!--Spring插件是通过覆盖（override）Struts2的ObjectFactory来增强核心框架对象的创建的-->
+    <constant name="struts.objectFactory" value="org.apache.struts2.spring.StrutsSpringObjectFactory" />
+
     <include file="struts-default.xml" />
 
     <package name="struts" namespace="/struts" extends="struts-default">
