@@ -1,0 +1,47 @@
+.clear-both {
+    clear: both;
+}
+
+body {
+    margin: 0px;
+}
+
+#head {
+    position: static;
+    top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    min-height: 60px;
+    border: 3px solid #4f9fcf;
+}
+
+#content {
+    width: 100%;
+    min-height: 250px;
+}
+
+#main {
+    width: 60%;
+    float: left;
+    border: 3px solid #4f9fcf;
+    min-height: 250px;
+    margin-top: 5px;
+    margin-left: 10%;
+}
+
+#right {
+    width: 20%;
+    float: left;
+    border: 3px solid #4f9fcf;
+    min-height: 100px;
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+#foot {
+    width: 100%;
+    margin-top: 5px;
+    min-height: 60px;
+    border: 3px solid #4f9fcf;
+}
