@@ -23,7 +23,7 @@ public class MainPipe extends PlumberPipe {
         modelForView.put("msg", "get MainPipe!");
 
         try {
-            Thread.sleep(1000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             logger.error(e);
         }
