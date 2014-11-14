@@ -2,8 +2,8 @@
 
     console.log("${msg}");
 
-    $(function(){
-        $("#foot").html("${msg}")
-    });
+    //$(function(){
+        $("#foot").html("${msg}");
+    //});
 
 </script>

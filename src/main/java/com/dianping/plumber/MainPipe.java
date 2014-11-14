@@ -23,7 +23,7 @@ public class MainPipe extends PlumberPipe {
     public ResultType execute(Map<String, Object> paramsFromController, Map<String, Object> modelForView) {
 
         try {
-            Thread.sleep(8000);
+            Thread.sleep(4000);
             SimpleDateFormat time=new SimpleDateFormat("HH:mm:ss");
             modelForView.put("msg", "Get MainPipe Content! " + time.format(new Date()));
         } catch (InterruptedException e) {
