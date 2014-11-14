@@ -3,7 +3,7 @@
     console.log("${msg}");
 
     $(function(){
-        $("#main").html("${msg}")
+        $("#foot").html("${msg}")
     });
 
 </script>

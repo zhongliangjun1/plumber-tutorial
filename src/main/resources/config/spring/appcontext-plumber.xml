@@ -15,10 +15,16 @@
     <bean id="demo" class="com.dianping.plumber.DemoController">
     </bean>
 
+    <bean id="headBarrier" class="com.dianping.plumber.HeadBarrier">
+    </bean>
+
     <bean id="mainPipe" class="com.dianping.plumber.MainPipe">
     </bean>
 
     <bean id="rightBarrier" class="com.dianping.plumber.RightBarrier">
+    </bean>
+
+    <bean id="footPipe" class="com.dianping.plumber.FootPipe">
     </bean>
 
 

@@ -11,11 +11,11 @@ import java.util.Map;
 /**
  * Created with IntelliJ IDEA.
  * Author: liangjun.zhong
- * Date: 14-11-13
- * Time: PM1:51
+ * Date: 14-11-14
+ * Time: PM12:36
  * To change this template use File | Settings | File Templates.
  */
-public class MainPipe extends PlumberPipe {
+public class FootPipe extends PlumberPipe {
 
     private Logger logger = Logger.getLogger(MainPipe.class);
 
@@ -23,13 +23,14 @@ public class MainPipe extends PlumberPipe {
     public ResultType execute(Map<String, Object> paramsFromController, Map<String, Object> modelForView) {
 
         try {
-            Thread.sleep(8000);
+            Thread.sleep(1000);
             SimpleDateFormat time=new SimpleDateFormat("HH:mm:ss");
-            modelForView.put("msg", "Get MainPipe Content! " + time.format(new Date()));
+            modelForView.put("msg", "Get FootPipe Content! " + time.format(new Date()));
         } catch (InterruptedException e) {
             logger.error(e);
         }
 
         return ResultType.SUCCESS;
     }
+
 }

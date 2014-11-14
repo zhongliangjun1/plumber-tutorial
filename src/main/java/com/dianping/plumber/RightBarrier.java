@@ -19,10 +19,10 @@ public class RightBarrier extends PlumberBarrier {
 
     @Override
     public ResultType execute(Map<String, Object> paramsFromController, Map<String, Object> modelForView) {
-        modelForView.put("msg", "get RightBarrier!");
 
+        modelForView.put("msg", "Get RightBarrier Content!");
         try {
-            Thread.sleep(1000);
+            Thread.sleep(100);
         } catch (InterruptedException e) {
             logger.error(e);
         }

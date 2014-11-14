@@ -7,8 +7,8 @@
 
 <body>
 
-    <div id="head">
-        head
+    <div id="head" pb-barrier="headBarrier">
+        ${headBarrier}
     </div>
 
     <div id="content">
@@ -17,13 +17,13 @@
         </div>
 
         <div id="right" pb-barrier="rightBarrier">
-            right ${rightBarrier}
+            ${rightBarrier}
         </div>
 
         <div class="clear-both"></div>
     </div>
 
-    <div id="foot">
+    <div id="foot" pb-pipe="footPipe">
         foot
     </div>
 
