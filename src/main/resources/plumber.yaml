@@ -1,14 +1,9 @@
 view:
-    resourcesLocation: classpath
     resourcesPath: /view
     suffix: .ftl
     encoding: UTF-8
     viewSourceLoaderFactory: com.dianping.plumber.view.support.ViewSourceUnderClassPathLoaderFactory
     viewRendererFactory: com.dianping.plumber.view.support.FreemarkerRendererFactory
-
-business:
-    controllersPackageScan:
-    pipesPackageScan:
 
 concurrent:
     timeout: 1000
