@@ -16,7 +16,7 @@ public class DemoController extends PlumberController {
 
     @Override
     public ResultType execute(Map<String, Object> paramsFromRequest, Map<String, Object> paramsForPagelets, Map<String, Object> modelForView) {
-        modelForView.put("title", "plumber-tutorial");
+        modelForView.put("title", "plumber-tutorial of " + paramsFromRequest.get("demoDesc"));
         return ResultType.SUCCESS;
     }
 

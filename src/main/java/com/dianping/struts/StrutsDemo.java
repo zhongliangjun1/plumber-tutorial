@@ -5,6 +5,8 @@ import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts2.ServletActionContext;
 
 import javax.servlet.http.HttpServletResponse;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -21,9 +23,14 @@ public class StrutsDemo extends ActionSupport {
     @Override
     public String execute() throws Exception {
 
-        HttpServletResponse response = ServletActionContext.getResponse();
+
         String plumberControllerName = "demo";
-        plumber.execute(plumberControllerName, null, null, response);
+
+        Map<String, Object> paramsForController = new HashMap<String, Object>();
+        paramsForController.put("demoDesc", "StrutsDemo");
+
+        HttpServletResponse response = ServletActionContext.getResponse();
+        plumber.execute(plumberControllerName, paramsForController, null, response);
 
         return null;
     }
