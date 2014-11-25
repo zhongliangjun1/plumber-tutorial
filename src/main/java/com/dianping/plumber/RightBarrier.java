@@ -28,6 +28,7 @@ public class RightBarrier extends PlumberBarrier {
         }
 
         return ResultType.SUCCESS;
+        //return ResultType.ERROR;
     }
 
 }
