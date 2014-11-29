@@ -24,7 +24,7 @@ public class StrutsDemo extends ActionSupport {
     public String execute() throws Exception {
 
 
-        String plumberControllerName = "demo";
+        String plumberControllerName = "demoController";
 
         Map<String, Object> paramsForController = new HashMap<String, Object>();
         paramsForController.put("demoDesc", "StrutsDemo");

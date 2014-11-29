@@ -12,7 +12,8 @@
     <bean id="plumber" class="com.dianping.plumber.core.Plumber">
     </bean>
 
-    <bean id="demo" class="com.dianping.plumber.DemoController">
+    <bean id="demoController" class="com.dianping.plumber.DemoController">
+        <property name="viewName" value="demo" />
     </bean>
 
     <bean id="headBarrier" class="com.dianping.plumber.HeadBarrier">
