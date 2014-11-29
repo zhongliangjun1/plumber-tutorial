@@ -20,6 +20,7 @@
     </bean>
 
     <bean id="mainPipe" class="com.dianping.plumber.MainPipe">
+        <property name="viewName" value="mainPipe" />
     </bean>
 
     <bean id="rightBarrier" class="com.dianping.plumber.RightBarrier">
