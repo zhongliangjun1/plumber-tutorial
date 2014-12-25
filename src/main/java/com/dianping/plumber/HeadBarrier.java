@@ -1,5 +1,6 @@
 package com.dianping.plumber;
 
+import com.dianping.plumber.annotation.ParamFromController;
 import com.dianping.plumber.core.PlumberBarrier;
 import com.dianping.plumber.core.ResultType;
 import org.apache.log4j.Logger;
@@ -17,10 +18,13 @@ public class HeadBarrier extends PlumberBarrier {
 
     private Logger logger = Logger.getLogger(RightBarrier.class);
 
+    @ParamFromController
+    private String param;
+
     @Override
     public ResultType execute(Map<String, Object> paramsFromController, Map<String, Object> modelForView) {
 
-        modelForView.put("msg", "Get HeadBarrier Content!");
+        modelForView.put("msg", "Get HeadBarrier Content! "+param);
         try {
             Thread.sleep(40);
         } catch (InterruptedException e) {
