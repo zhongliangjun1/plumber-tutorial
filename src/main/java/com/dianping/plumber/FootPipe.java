@@ -24,7 +24,7 @@ public class FootPipe extends PlumberPipe {
     private String param;
 
     @Override
-    public ResultType execute(Map<String, Object> paramsFromController, Map<String, Object> modelForView) {
+    public ResultType execute(Map<String, Object> paramsFromRequest, Map<String, Object> paramsFromController, Map<String, Object> modelForView) {
 
         try {
             Thread.sleep(1000);

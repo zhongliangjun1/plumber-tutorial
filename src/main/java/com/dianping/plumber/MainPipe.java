@@ -20,7 +20,7 @@ public class MainPipe extends PlumberPipe {
     private Logger logger = Logger.getLogger(MainPipe.class);
 
     @Override
-    public ResultType execute(Map<String, Object> paramsFromController, Map<String, Object> modelForView) {
+    public ResultType execute(Map<String, Object> paramsFromRequest, Map<String, Object> paramsFromController, Map<String, Object> modelForView) {
 
         try {
             Thread.sleep(4000);

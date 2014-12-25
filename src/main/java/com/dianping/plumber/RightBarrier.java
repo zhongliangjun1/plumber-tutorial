@@ -18,7 +18,7 @@ public class RightBarrier extends PlumberBarrier {
     private Logger logger = Logger.getLogger(RightBarrier.class);
 
     @Override
-    public ResultType execute(Map<String, Object> paramsFromController, Map<String, Object> modelForView) {
+    public ResultType execute(Map<String, Object> paramsFromRequest, Map<String, Object> paramsFromController, Map<String, Object> modelForView) {
 
         modelForView.put("msg", "Get RightBarrier Content!");
         try {
