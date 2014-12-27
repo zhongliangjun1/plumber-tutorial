@@ -45,6 +45,18 @@
     </filter-mapping>
 
 
+    <servlet>
+        <servlet-name>plumber-freemarker</servlet-name>
+        <servlet-class>com.dianping.plumber.view.support.renderer.freemarker.FreemarkerServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>plumber-freemarker</servlet-name>
+        <url-pattern>*.impossible</url-pattern>
+    </servlet-mapping>
+
+
     <listener>
         <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
     </listener>
