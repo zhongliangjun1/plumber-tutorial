@@ -13,20 +13,23 @@
     </bean>
 
     <bean id="demoController" class="com.dianping.plumber.DemoController">
-        <property name="viewName" value="demo" />
+        <property name="viewPath" value="/view/demo.ftl" />
     </bean>
 
     <bean id="headBarrier" class="com.dianping.plumber.HeadBarrier">
+        <property name="viewPath" value="/view/headBarrier.ftl" />
     </bean>
 
     <bean id="mainPipe" class="com.dianping.plumber.MainPipe">
-        <property name="viewName" value="mainPipe" />
+        <property name="viewPath" value="/view/mainPipe.ftl" />
     </bean>
 
     <bean id="rightBarrier" class="com.dianping.plumber.RightBarrier">
+        <property name="viewPath" value="/view/rightBarrier.ftl" />
     </bean>
 
     <bean id="footPipe" class="com.dianping.plumber.FootPipe">
+        <property name="viewPath" value="/view/footPipe.ftl" />
     </bean>
 
 
