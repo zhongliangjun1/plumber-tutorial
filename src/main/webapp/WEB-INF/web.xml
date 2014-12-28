@@ -62,6 +62,10 @@
     </listener>
 
     <listener>
+        <listener-class>com.dianping.plumber.view.support.loader.ViewSourceUnderWebContextLoader</listener-class>
+    </listener>
+
+    <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
 
