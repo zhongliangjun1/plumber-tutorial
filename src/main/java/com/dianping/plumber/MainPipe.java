@@ -30,6 +30,9 @@ public class MainPipe extends PlumberPipe {
             logger.error(e);
         }
 
+//        String a = null;
+//        a.split("test");
+
         return ResultType.SUCCESS;
     }
 }

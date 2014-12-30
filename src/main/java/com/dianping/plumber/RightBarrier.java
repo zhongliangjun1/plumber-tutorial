@@ -27,6 +27,9 @@ public class RightBarrier extends PlumberBarrier {
             logger.error(e);
         }
 
+//        String a = null;
+//        a.split("test");
+
         return ResultType.SUCCESS;
         //return ResultType.ERROR;
     }
