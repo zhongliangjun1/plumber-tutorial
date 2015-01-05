@@ -1,5 +1,6 @@
 configOverriderFactory: com.dianping.plumber.DemoConfigOverriderFactory
 env: dev
+responseContentType: text/html;charset=UTF-8
 view:
     encoding: UTF-8
     viewSourceLoaderFactory: com.dianping.plumber.view.support.loader.ViewSourceUnderWebContextLoaderFactory
