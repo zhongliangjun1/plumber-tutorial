@@ -17,7 +17,7 @@
 
         <!-- http://localhost:8080/struts/demo -->
         <action name="demo" class="com.dianping.struts.StrutsDemo">
-            <!-- without result config <result name="success">/index.jsp</result>-->
+            <result name="error">/error.jsp</result>
         </action>
 
     </package>

@@ -1,6 +1,7 @@
 package com.dianping.struts;
 
 import com.dianping.plumber.core.Plumber;
+import com.dianping.plumber.core.ResultType;
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts2.ServletActionContext;
 
@@ -30,9 +31,14 @@ public class StrutsDemo extends ActionSupport {
         paramsForController.put("demoDesc", "StrutsDemo");
 
         HttpServletResponse response = ServletActionContext.getResponse();
-        plumber.execute(plumberControllerName, paramsForController, null, response);
 
-        return null;
+        ResultType resultType = plumber.execute(plumberControllerName, paramsForController, null, response);
+        if ( resultType==ResultType.SUCCESS ) {
+            return null;
+        } else {
+            return "error";
+        }
+
     }
 
     public void setPlumber(Plumber plumber) {

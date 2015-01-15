@@ -21,6 +21,9 @@ public class DemoController extends PlumberController {
 
         modelForView.put("title", "plumber-tutorial of " + paramsFromRequest.get("demoDesc"));
 
+//        String a = null;
+//        a.split("test");
+
         return ResultType.SUCCESS;
     }
 
