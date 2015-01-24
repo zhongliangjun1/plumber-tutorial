@@ -5,6 +5,7 @@ import com.dianping.plumber.core.ResultType;
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts2.ServletActionContext;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.HashMap;
 import java.util.Map;
@@ -31,10 +32,11 @@ public class StrutsDemo extends ActionSupport {
         paramsForController.put("demoDesc", "StrutsDemo");
 
         HttpServletResponse response = ServletActionContext.getResponse();
+        HttpServletRequest request = ServletActionContext.getRequest();
 
         response.setHeader("X-Accel-Buffering", "no"); // disable nginx proxy_buffering
 
-        ResultType resultType = plumber.execute(plumberControllerName, paramsForController, null, response);
+        ResultType resultType = plumber.execute(plumberControllerName, paramsForController, request, response);
         if ( resultType==ResultType.SUCCESS ) {
             return null;
         } else {
