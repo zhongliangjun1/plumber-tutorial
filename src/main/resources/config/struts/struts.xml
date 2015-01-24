@@ -20,6 +20,10 @@
             <result name="error">/error.jsp</result>
         </action>
 
+        <action name="test" class="com.dianping.struts.PerformanceTest">
+            <result name="success">/test.jsp</result>
+        </action>
+
     </package>
 
 </struts>
