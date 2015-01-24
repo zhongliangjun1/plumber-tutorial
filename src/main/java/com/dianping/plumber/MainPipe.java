@@ -1,6 +1,6 @@
 package com.dianping.plumber;
 
-import com.dianping.plumber.core.PlumberPipe;
+import com.dianping.plumber.core.PlumberPagelet;
 import com.dianping.plumber.core.ResultType;
 import org.apache.log4j.Logger;
 
@@ -15,7 +15,7 @@ import java.util.Map;
  * Time: PM1:51
  * To change this template use File | Settings | File Templates.
  */
-public class MainPipe extends PlumberPipe {
+public class MainPipe extends PlumberPagelet {
 
     private Logger logger = Logger.getLogger(MainPipe.class);
 

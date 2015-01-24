@@ -2,7 +2,7 @@ package com.dianping.plumber;
 
 import com.dianping.plumber.annotation.ParamFromController;
 import com.dianping.plumber.annotation.ParamFromRequest;
-import com.dianping.plumber.core.PlumberBarrier;
+import com.dianping.plumber.core.PlumberPagelet;
 import com.dianping.plumber.core.ResultType;
 import org.apache.log4j.Logger;
 
@@ -15,7 +15,7 @@ import java.util.Map;
  * Time: PM12:32
  * To change this template use File | Settings | File Templates.
  */
-public class HeadBarrier extends PlumberBarrier {
+public class HeadBarrier extends PlumberPagelet {
 
     private Logger logger = Logger.getLogger(RightBarrier.class);
 
