@@ -15,8 +15,13 @@
 
     <package name="struts" namespace="/struts" extends="struts-default">
 
-        <!-- http://localhost:8080/struts/demo -->
-        <action name="demo" class="com.dianping.struts.StrutsDemo">
+        <!-- http://localhost:8080/struts/pcPageDemo -->
+        <action name="pcPageDemo" class="com.dianping.struts.PCPageDemo">
+            <result name="error">/error.jsp</result>
+        </action>
+
+        <!-- http://localhost:8080/struts/mobilePageDemo -->
+        <action name="mobilePageDemo" class="com.dianping.struts.MobilePageDemo">
             <result name="error">/error.jsp</result>
         </action>
 

@@ -17,7 +17,7 @@ import java.util.Map;
  * Time: PM10:12
  * To change this template use File | Settings | File Templates.
  */
-public class StrutsDemo extends ActionSupport {
+public class PCPageDemo extends ActionSupport {
     private static final long serialVersionUID = 1150116003710481553L;
 
     private Plumber plumber;
@@ -29,7 +29,7 @@ public class StrutsDemo extends ActionSupport {
         String plumberControllerName = "demoController";
 
         Map<String, Object> paramsForController = new HashMap<String, Object>();
-        paramsForController.put("demoDesc", "StrutsDemo");
+        paramsForController.put("demoDesc", "PCPageDemo");
 
         HttpServletResponse response = ServletActionContext.getResponse();
         HttpServletRequest request = ServletActionContext.getRequest();

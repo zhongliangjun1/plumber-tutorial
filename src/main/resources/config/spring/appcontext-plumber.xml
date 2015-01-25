@@ -12,30 +12,37 @@
     <bean id="plumber" class="com.dianping.plumber.core.Plumber">
     </bean>
 
+
+    <!--  demo for pc mode -->
     <bean id="demoController" class="com.dianping.plumber.DemoController">
         <!--<property name="viewPath" value="/view/demo.ftl" />-->
-        <property name="viewPath" value="/WEB-INF/view/demo.ftl" />
+        <property name="viewPath" value="/WEB-INF/view/pc/demo.ftl" />
     </bean>
 
     <bean id="headBarrier" class="com.dianping.plumber.HeadBarrier">
         <!--<property name="viewPath" value="/view/headBarrier.ftl" />-->
-        <property name="viewPath" value="/WEB-INF/view/headBarrier.ftl" />
+        <property name="viewPath" value="/WEB-INF/view/pc/headBarrier.ftl" />
     </bean>
 
     <bean id="mainPipe" class="com.dianping.plumber.MainPipe">
         <!--<property name="viewPath" value="/view/mainPipe.ftl" />-->
-        <property name="viewPath" value="/WEB-INF/view/mainPipe.ftl" />
+        <property name="viewPath" value="/WEB-INF/view/pc/mainPipe.ftl" />
     </bean>
 
     <bean id="rightBarrier" class="com.dianping.plumber.RightBarrier">
         <!--<property name="viewPath" value="/view/rightBarrier.ftl" />-->
-        <property name="viewPath" value="/WEB-INF/view/rightBarrier.ftl" />
+        <property name="viewPath" value="/WEB-INF/view/pc/rightBarrier.ftl" />
     </bean>
 
     <bean id="footPipe" class="com.dianping.plumber.FootPipe">
         <!--<property name="viewPath" value="/view/footPipe.ftl" />-->
-        <property name="viewPath" value="/WEB-INF/view/footPipe.ftl" />
+        <property name="viewPath" value="/WEB-INF/view/pc/footPipe.ftl" />
     </bean>
+
+
+
+
+    <!-- demo for mobile mode -->
 
 
 

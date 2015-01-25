@@ -2,7 +2,7 @@
     <head>
         <title>${title}-view loaded from WebContext</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <link rel="stylesheet" type="text/css" href="/static/css/demo.css">
+        <link rel="stylesheet" type="text/css" href="/static/pc/css/demo.css">
     </head>
 
 <body>
@@ -27,8 +27,8 @@
         foot
     </div>
 
-    <script src="/static/js/lib/jquery-min.js"></script>
-    <script src="/static/js/demo.js"></script>
+    <script src="/static/common/js/jquery-min.js"></script>
+    <script src="/static/pc/js/demo.js"></script>
 
 <#--</body>-->
 <#--</html>-->
