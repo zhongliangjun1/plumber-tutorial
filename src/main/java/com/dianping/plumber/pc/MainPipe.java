@@ -1,41 +1,38 @@
-package com.dianping.plumber;
+package com.dianping.plumber.pc;
 
-import com.dianping.plumber.annotation.ParamFromController;
-import com.dianping.plumber.annotation.ParamFromRequest;
 import com.dianping.plumber.core.PlumberPagelet;
 import com.dianping.plumber.core.ResultType;
 import org.apache.log4j.Logger;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
  * Author: liangjun.zhong
- * Date: 14-11-14
- * Time: PM12:32
+ * Date: 14-11-13
+ * Time: PM1:51
  * To change this template use File | Settings | File Templates.
  */
-public class HeadBarrier extends PlumberPagelet {
+public class MainPipe extends PlumberPagelet {
 
-    private Logger logger = Logger.getLogger(RightBarrier.class);
-
-    @ParamFromController
-    private String param;
-
-    @ParamFromRequest
-    private String demoDesc;
+    private Logger logger = Logger.getLogger(MainPipe.class);
 
     @Override
     public ResultType execute(Map<String, Object> paramsFromRequest, Map<String, Object> paramsFromController, Map<String, Object> modelForView) {
 
-        modelForView.put("msg", "Get HeadBarrier Content! "+ param + " " + demoDesc);
         try {
-            Thread.sleep(40);
+            Thread.sleep(4000);
+            SimpleDateFormat time=new SimpleDateFormat("HH:mm:ss");
+            modelForView.put("msg", "Get MainPipe Content! " + time.format(new Date()));
         } catch (InterruptedException e) {
             logger.error(e);
         }
 
+//        String a = null;
+//        a.split("test");
+
         return ResultType.SUCCESS;
     }
-
 }

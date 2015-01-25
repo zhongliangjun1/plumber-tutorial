@@ -1,31 +1,28 @@
-package com.dianping.plumber;
+package com.dianping.plumber.pc;
 
-import com.dianping.plumber.core.PlumberPagelet;
+import com.dianping.plumber.core.PlumberBarrier;
 import com.dianping.plumber.core.ResultType;
 import org.apache.log4j.Logger;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
  * Author: liangjun.zhong
  * Date: 14-11-13
- * Time: PM1:51
+ * Time: PM1:58
  * To change this template use File | Settings | File Templates.
  */
-public class MainPipe extends PlumberPagelet {
+public class RightBarrier extends PlumberBarrier {
 
-    private Logger logger = Logger.getLogger(MainPipe.class);
+    private Logger logger = Logger.getLogger(RightBarrier.class);
 
     @Override
     public ResultType execute(Map<String, Object> paramsFromRequest, Map<String, Object> paramsFromController, Map<String, Object> modelForView) {
 
+        modelForView.put("msg", "Get RightBarrier Content!");
         try {
-            Thread.sleep(4000);
-            SimpleDateFormat time=new SimpleDateFormat("HH:mm:ss");
-            modelForView.put("msg", "Get MainPipe Content! " + time.format(new Date()));
+            Thread.sleep(100);
         } catch (InterruptedException e) {
             logger.error(e);
         }
@@ -34,5 +31,7 @@ public class MainPipe extends PlumberPagelet {
 //        a.split("test");
 
         return ResultType.SUCCESS;
+        //return ResultType.ERROR;
     }
+
 }

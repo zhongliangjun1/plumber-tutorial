@@ -1,8 +1,7 @@
-package com.dianping.plumber;
+package com.dianping.plumber.pc;
 
 import com.dianping.plumber.annotation.ParamFromController;
 import com.dianping.plumber.core.PlumberPagelet;
-import com.dianping.plumber.core.PlumberPipe;
 import com.dianping.plumber.core.ResultType;
 import org.apache.log4j.Logger;
 

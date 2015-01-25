@@ -1,4 +1,4 @@
-package com.dianping.plumber;
+package com.dianping.plumber.pc;
 
 import com.dianping.plumber.core.PlumberController;
 import com.dianping.plumber.core.ResultType;
