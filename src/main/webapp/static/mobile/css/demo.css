@@ -1,0 +1,50 @@
+.bs-callout {
+	padding: 20px;
+	border: 1px solid #eee;
+	border-left-width: 5px;
+	border-radius: 3px;
+}
+.bs-callout-blue {
+	border-left-color: #5bc0de;
+}
+.bs-callout-title-blue {
+	color: #5bc0de;
+}
+
+.bs-callout-orange {
+	border-left-color: #f0ad4e;
+}
+.bs-callout-title-orange {
+	color: #f0ad4e;
+}
+
+.bs-callout-red {
+	border-left-color: #ce4844;
+}
+.bs-callout-title-red {
+	color: #ce4844;
+}
+
+.bs-callout-grey {
+	border-left-color: #aa6708;
+}
+.bs-callout-title-grey {
+	color: #aa6708;
+}
+
+
+
+.header {
+	background-color: #428bca;
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	line-height: 25px;
+	font-weight: 500;
+}
+
+.item {
+	margin-top: 0.5px;
+}
+

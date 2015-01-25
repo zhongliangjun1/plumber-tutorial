@@ -26,7 +26,7 @@
         </div>
 
         <script src="/static/common/js/jquery.min.js"></script>
-        <script src="/static/common//js/bootstrap.min.js"></script>
+        <script src="/static/common/js/bootstrap.min.js"></script>
 
     </body>
 

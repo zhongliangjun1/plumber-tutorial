@@ -43,7 +43,17 @@
 
 
     <!-- demo for mobile mode -->
+    <bean id="mobileController" class="com.dianping.plumber.mobile.MobileController">
+        <property name="viewPath" value="/WEB-INF/view/mobile/demo.ftl" />
+    </bean>
 
+    <bean id="mobileHeadBarrier" class="com.dianping.plumber.mobile.MobileHeadBarrier">
+        <property name="viewPath" value="/WEB-INF/view/mobile/headBarrier.ftl" />
+    </bean>
+
+    <bean id="mobileMainBarrier" class="com.dianping.plumber.mobile.MobileMainBarrier">
+        <property name="viewPath" value="/WEB-INF/view/mobile/mainBarrier.ftl" />
+    </bean>
 
 
 

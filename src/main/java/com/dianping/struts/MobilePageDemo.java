@@ -27,10 +27,10 @@ public class MobilePageDemo extends ActionSupport {
     public String execute() throws Exception {
 
 
-        String plumberControllerName = "mobileDemoController";
+        String plumberControllerName = "mobileController";
 
         Map<String, Object> paramsForController = new HashMap<String, Object>();
-        paramsForController.put("demoDesc", "mobileDemoController");
+        paramsForController.put("demoDesc", "mobile page demo");
 
         HttpServletResponse response = ServletActionContext.getResponse();
         HttpServletRequest request = ServletActionContext.getRequest();

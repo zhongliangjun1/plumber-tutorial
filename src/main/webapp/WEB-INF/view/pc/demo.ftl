@@ -27,7 +27,7 @@
         foot
     </div>
 
-    <script src="/static/common/js/jquery-min.js"></script>
+    <script src="/static/common/js/jquery.min.js"></script>
     <script src="/static/pc/js/demo.js"></script>
 
 <#--</body>-->
