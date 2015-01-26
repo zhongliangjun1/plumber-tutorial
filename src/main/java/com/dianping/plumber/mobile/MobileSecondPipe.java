@@ -20,6 +20,10 @@ public class MobileSecondPipe extends PlumberPagelet {
 
         MockExecute.run(2000);
         modelForView.put("title", "secondPipe");
+
+//        String a = null;
+//        a.split("test");
+
         return ResultType.SUCCESS;
 
     }
