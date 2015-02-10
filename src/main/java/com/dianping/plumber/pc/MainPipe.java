@@ -33,6 +33,8 @@ public class MainPipe extends PlumberPagelet {
 //        String a = null;
 //        a.split("test");
 
+//        paramsFromController.put("testNullValue", null);
+
         return ResultType.SUCCESS;
     }
 }

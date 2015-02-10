@@ -19,6 +19,8 @@ public class DemoController extends PlumberController {
 
         paramsForPagelets.put("param", "test paramFromController");
 
+        paramsForPagelets.put("testNullValue", null);
+
         modelForView.put("title", "plumber-tutorial of " + paramsFromRequest.get("demoDesc"));
 
 //        String a = null;
