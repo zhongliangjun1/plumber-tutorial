@@ -34,8 +34,6 @@ public class PCPageDemo extends ActionSupport {
         HttpServletResponse response = ServletActionContext.getResponse();
         HttpServletRequest request = ServletActionContext.getRequest();
 
-        response.setHeader("X-Accel-Buffering", "no"); // disable nginx proxy_buffering
-
         ResultType resultType = plumber.execute(plumberControllerName, paramsForController, request, response);
         if ( resultType==ResultType.SUCCESS ) {
             return null;
