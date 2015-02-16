@@ -67,6 +67,24 @@
     </bean>
 
 
+    <!-- demo for config pagelet definition in spring bean configuration  -->
+    <bean id="springConfigController" class="com.dianping.plumber.mobile.MobileController">
+        <property name="viewPath" value="/WEB-INF/view/test/demo.ftl" />
+        <property name="barrierNames">
+            <list value-type="java.lang.String">
+                <value>mobileHeadBarrier</value>
+                <value>mobileMainBarrier</value>
+            </list>
+        </property>
+        <property name="pipeNames">
+            <list value-type="java.lang.String">
+                <value>mobileFirstPipe@1</value>
+                <value>mobileSecondPipe@2</value>
+                <value>mobileThirdPipe@3</value>
+                <value>mobileFourthPipe@4</value>
+            </list>
+        </property>
+    </bean>
 
 
 
