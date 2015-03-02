@@ -23,6 +23,11 @@
                 <h4 class="list-group-item-heading">mobile page demo</h4>
                 <p class="list-group-item-text">a usage mode more suitable for mobile page</p>
             </a>
+
+            <a href="/struts/jsPageDemo" class="list-group-item">
+                <h4 class="list-group-item-heading">plumber.js demo</h4>
+                <p class="list-group-item-text">make your module's js without need to wait for the dom ready event </p>
+            </a>
         </div>
 
         <script src="/static/common/js/jquery.min.js"></script>
