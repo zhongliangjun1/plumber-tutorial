@@ -86,6 +86,27 @@
         </property>
     </bean>
 
+    <!-- demo for plumber.js -->
+    <bean id="jsController" class="com.dianping.plumber.js.PlumberJsController">
+        <property name="viewPath" value="/WEB-INF/view/js/plumberJsDemo.ftl" />
+    </bean>
+
+    <bean id="jsFirstPagelet" class="com.dianping.plumber.js.JsFirstPagelet">
+        <property name="viewPath" value="/WEB-INF/view/js/jsFirstPagelet.ftl" />
+    </bean>
+
+    <bean id="jsSecondPagelet" class="com.dianping.plumber.js.JsSecondPagelet">
+        <property name="viewPath" value="/WEB-INF/view/js/jsSecondPagelet.ftl" />
+    </bean>
+
+    <bean id="jsThirdPagelet" class="com.dianping.plumber.js.JsThirdPagelet">
+        <property name="viewPath" value="/WEB-INF/view/js/jsThirdPagelet.ftl" />
+    </bean>
+
+    <bean id="jsFourthPagelet" class="com.dianping.plumber.js.JsFourthPagelet">
+        <property name="viewPath" value="/WEB-INF/view/js/jsFourthPagelet.ftl" />
+    </bean>
+
 
 
 </beans>

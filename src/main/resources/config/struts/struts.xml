@@ -25,6 +25,11 @@
             <result name="error">/error.jsp</result>
         </action>
 
+        <!-- http://localhost:8080/struts/jsPageDemo -->
+        <action name="jsPageDemo" class="com.dianping.struts.JsPageDemo">
+            <result name="error">/error.jsp</result>
+        </action>
+
 
 
         <action name="springConfigTest" class="com.dianping.struts.SpringConfigTest">
