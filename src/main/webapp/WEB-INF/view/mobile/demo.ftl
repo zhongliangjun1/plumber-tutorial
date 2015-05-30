@@ -20,10 +20,10 @@
     <script src="/static/common/js/jquery.min.js"></script>
     <script src="/static/common/js/bootstrap.min.js"></script>
 
-    <div class="hide" pb-pipe="mobileFirstPipe@1"></div>
-    <div class="hide" pb-pipe="mobileSecondPipe@2"></div>
-    <div class="hide" pb-pipe="mobileThirdPipe@3"></div>
-    <div class="hide" pb-pipe="mobileFourthPipe@4"></div>
+    <div class="hide" pb-pipe="mobileFirstPipe@400"></div>
+    <div class="hide" pb-pipe="mobileSecondPipe@300"></div>
+    <div class="hide" pb-pipe="mobileThirdPipe@200"></div>
+    <div class="hide" pb-pipe="mobileFourthPipe@100"></div>
 
     <#--</body>-->
 <#--</html>-->

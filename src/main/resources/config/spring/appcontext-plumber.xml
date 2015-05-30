@@ -78,10 +78,10 @@
         </property>
         <property name="pipeNames">
             <list value-type="java.lang.String">
-                <value>mobileFirstPipe@1</value>
-                <value>mobileSecondPipe@2</value>
-                <value>mobileThirdPipe@3</value>
-                <value>mobileFourthPipe@4</value>
+                <value>mobileFirstPipe@4000</value>
+                <value>mobileSecondPipe@3000</value>
+                <value>mobileThirdPipe@2000</value>
+                <value>mobileFourthPipe@1000</value>
             </list>
         </property>
     </bean>

@@ -26,8 +26,8 @@
     <script src="/static/common/js/bootstrap.min.js"></script>
     <script src="/static/js/demo.js"></script>
 
-    <div class="hide" pb-pipe="jsThirdPagelet@1"></div>
-    <div class="hide" pb-pipe="jsFourthPagelet@2"></div>
+    <div class="hide" pb-pipe="jsThirdPagelet@2000"></div>
+    <div class="hide" pb-pipe="jsFourthPagelet@1000"></div>
 
     <#--</body>-->
 <#--</html>-->
